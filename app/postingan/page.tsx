@@ -1,13 +1,15 @@
 import React from 'react'
-import Header from '../components/header'
-import Menu from '../components/sidenav'
-import Footer from '../components/footer'
+import Postingsection from '../components/section/postingsection'
 
 const PostinganIslami = () => {
   return (
     <>
-    ini conent "/potingan isalni"
-  </>
+      <section className='flex flex-col items-center gap-10'>
+          <Postingsection/>
+          <Postingsection/>
+          <Postingsection/> 
+      </section>
+    </>
   )
 }
 

@@ -1,17 +1,24 @@
+"use client"
 import React from 'react'
-import Menu from'../components/sidenav'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Tanyasection from '../components/section/tanyasection'
 const tanyajawab = () => {
   return (
     <>
-    halo 2
-    {/* <div className='bg-background flex h-screen w-screen'>
-        <Menu/>
-        <Header/>
-        <Footer/>
-    </div> */}
-  </>
+        <div className='flex w-full flex-col ml-16'>
+          <div className='flex flex-row  gap-10 mb-10'>
+            <Tanyasection/>
+            <Tanyasection/>
+          </div>
+          <div className='flex flex-row gap-10 mb-10'>
+            <Tanyasection/>
+            <Tanyasection/>
+          </div>
+          <div className='flex flex-row gap-10 mb-10'>
+            <Tanyasection/>
+            <Tanyasection/>
+          </div>
+        </div>
+    </>
   )
 }
 

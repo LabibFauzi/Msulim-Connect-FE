@@ -1,3 +1,3 @@
-import Template from "../tanyajawab/template";
+import Template from "../components/template/template";
 
 export default Template

@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      h:{
+        '500':'500px',
+      },
       colors:{
         background:'#F5F5F5',
         primarymain:'#13454E',
@@ -23,8 +26,11 @@ const config: Config = {
         secondaryhover:'#006247',
         secondarypresed:'#003124',
         neutural:'#616161',
+        neutural2:'#F5F5F5',
+        neutural3:'#404040',
         black:'#0A0A0A',
         white:'#FFFFFF',
+        abu:'#D9D9D9', 
       },
     },
   },
