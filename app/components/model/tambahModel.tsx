@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface TambahModelProps {
-  onClose: () => void;
+    onClose: () => void;
 }
 
 const TambahModel: React.FC<TambahModelProps> = ({ onClose }) => {
@@ -13,9 +13,6 @@ return (
                 <button onClick={onClose}>
                 <img src="/asets/exit.png" alt="" className='flex w-8 h-8 hover:scale-110'/>
                 </button>
-            </div>
-            <div className='flex w-full'>
-                <input type="text" className='flex w-full text-2xl outline-none' placeholder='Judul' />
             </div>
             <div className='flex border-b-2 w-full'></div>
             <form action="" className='w-full '>

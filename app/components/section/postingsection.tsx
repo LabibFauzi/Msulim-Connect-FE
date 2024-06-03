@@ -30,7 +30,7 @@ const PostingSection = () => {
   };
 
   return (
-    <section className='flex flex-col w-2/5 h-1/2 bg-white rounded-2xl px-4 py-4 gap-3 select-none'>
+    <section className='flex flex-col w-2/5 h-1/2 bg-white rounded-2xl px-4 py-6 gap-3 select-none shadow-lg'>
       <Profile />
       <picture className='relative' onDoubleClick={handleDoubleClick}>
         <img src={images[currentImageIndex]} className='posting-img' alt="" />

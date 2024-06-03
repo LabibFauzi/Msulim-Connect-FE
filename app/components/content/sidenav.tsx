@@ -14,13 +14,18 @@ const SideNav = () => {
         break
       case "/tanyajawab":
       case "/menjawab":
+      case "/menjawab2":
+      case "/menjawab3":
+      case "/menjawab4":
         setLinkActive(1)
         break
       case "/postingan":
         setLinkActive(2)
         break
       case "/artikel":
-      case "/artikelopen":
+      case "/artikel1":
+      case "/artikel2":
+      case "/artikel3":
         setLinkActive(3)
         break
       default:
@@ -65,24 +70,26 @@ const SideNav = () => {
 
   return (
     <>  
-      <div className='bg-white h-screen w-80 px-7 pt-14  items-center flex flex-col fixed '>
+      <div className='bg-white h-screen w-80 px-7 pt-14 items-center flex-col fixed block'>
         <div className='justify-center items-center flex mb-14 cursor-default'>
           <img src="/asets/logo.png" className='w-10 h-10 mr-3 flex'/>
-          <h1 className='text-secondarymain text-2xl font-bold items-center'>Muslim Connect</h1>
+          <Link className='text-secondarymain text-2xl font-bold items-center' href='/'>Muslim Connect</Link>
         </div>
-          <div className='flex-col flex gap-4 text-lg font-bold justify-center w-full'>
-            {DATA.map((val, id) => (
-              <div 
-              key={id}
+        <div className='flex-col flex gap-4 text-lg font-bold justify-center w-full'>
+          {DATA.map((val, id) => (
+            <div 
+              key={id}  
               className={`${linkActive === id ? " bg-secondarymain text-white" : "hover:bg-abu duration-300"} w-full rounded-2xl h-14 items-center flex pl-5 font-bold`}
-              onClick={()=> handleLinkClick(id)}>
+              onClick={() => handleLinkClick(id)}>
+              <Link href={val.link} className='flex items-center w-full h-full'>
                 <img 
                   src={linkActive === id ? val.Clicked : val.icon} 
                   className='w-6 h-6 flex mr-3' alt="" />
-                <Link href={val.link}>{val.title}</Link>
-              </div>
-            ))}
-          </div>
+                <span>{val.title}</span>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   )

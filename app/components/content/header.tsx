@@ -47,28 +47,27 @@ const Header : React.FC = () => {
 return (
     <>
         <div className='flex items-center justify-between px-16 py-10  '>
-            <div className=' flex flex-row items-center w-3/4 gap-5'>
-                <form className='flex bg-white items-center rounded-lg w-3/4  border h-14 border-primaryborder'>
+            <div className=' flex flex-row items-center gap-5'>
+                <form className='flex bg-white items-center rounded-lg w-[500px]  border-2 h-14 hover:border-primaryborder'>
                     <button className='flex w-16 justify-center h-full items-center'>
                         <img src="/asets/search.png" className='h-6 w-6 m-2 cursor-pointer hover:opacity-50' />
-                    </button>
+                    </button>   
                     <input 
                     className='flex outline-none text-neutural3 text-xl w-3/4 h-full '
                     spellCheck="false"
                     type='text'
-                    placeholder='Cari Pertanyaan Dan Artikel...'
-                    
+                    placeholder='Cari Topik, Postingan, Artikel'
                     />
                 </form>
                 <button 
-                className=' bg-white  border rounded-lg border-primaryborder w-12 h-12 justify-center flex items-center hover:scale-105 duration-150' 
+                className='rounded-lg w-24 h-14 justify-center flex items-center bg-secondarymain hover:bg-secondaryhover duration-300' 
                 onClick={toggleTambah}>
-                    <img src="/asets/plus.png" className='w-6 h-6 flex' alt="" />
+                    <h1 className='text-xl font-bold text-white'>Buat</h1>
                 </button>
             </div>
             <div className='flex justify-center items-center gap-4 text-base font-bold cursor-default'>
                     <button onClick={toggleProfile}>
-                        <img src="/asets/profile.png" className='flex w-10 h-10' alt=""/>
+                        <img src="/asets/profile-picture.png" className='flex w-10 h-10 rounded-full' alt=""/>
                     </button>
                     <h1 className='font-bold text-lg cursor-pointer'>Labib Fauzi</h1>
                 {profileModel && (

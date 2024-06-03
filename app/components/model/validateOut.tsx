@@ -19,7 +19,7 @@ return (
                         <h1 className='justify-start text-lg pb-10 text-neutural3'>Anda yakin ingin keluar dari akun ini ?</h1>
                         <div className='flex justify-end gap-3'>
                             <button className='bg-white w-28 h-12  text-secondarymain font-bold text-xl rounded-lg  duration-150' onClick={onClose}>Batal</button>
-                            <Link className='bg-secondarymain w-28 h-12 text-white font-bold text-xl rounded-lg hover:bg-secondaryhover duration-150 flex justify-center items-center' href='/login'  >Keluar</Link>
+                            <Link className='bg-secondarymain w-28 h-12 text-white font-bold text-xl rounded-lg hover:bg-secondaryhover duration-150 flex justify-center items-center' href='/masuk'  >Keluar</Link>
                         </div>
                 </div>
             </div>
