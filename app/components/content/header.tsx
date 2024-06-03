@@ -73,7 +73,7 @@ return (
                 {profileModel && (
                     <div ref={profileRef}className='flex  absolute mt-96 mr-96'>
                         <div className='flex flex-col justify-center items-center gap-3 z-30  bg-white rounded-lg w-72 h-72 drop-shadow-xl border'>
-                            <img src="/asets/profile-picture.png" className='flex w-20 h-20 object-cover' alt="" />
+                            <img src="/asets/profile-picture.png" className='flex w-20 h-20 object-cover rounded-full' alt="" />
                             <div className='flex items-center flex-col '>
                                 <h1 className='font-bold text-2xl'>Labib Fauzi</h1>
                                 <h1 className='text-lg font-light'>Contoh@gmail.com</h1>
