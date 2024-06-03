@@ -3,7 +3,8 @@ import Footer from "./components/content/footer";
 import Header from "./components/content/header";
 import SideNav from "./components/content/sidenav";
 
-const Template = ({children}: { children: React.ReactNode }) => {
+
+const Page = () => {
     return (
         <div className="grid grid-cols-7 bg-background ">
             <aside className="self-start sticky top-0 col-span-1">
@@ -23,4 +24,4 @@ const Template = ({children}: { children: React.ReactNode }) => {
     )
 }
 
-export default Template;
+export default Page;

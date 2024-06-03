@@ -14,7 +14,6 @@ const Menjawab = () => {
     };
 
 return (
-    <>
         <div className='flex flex-col ml-16 w-full gap-10 cursor-default'>
             <div className='flex flex-col bg-white rounded-2xl px-6 py-6 gap-5 shadow-lg'>
                 <div className='flex flex-row h-16 justify-between items-center'>
@@ -60,7 +59,6 @@ return (
                 </div>
             </div>
         </div>
-    </>
 )
 }
 

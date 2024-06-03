@@ -45,7 +45,7 @@ const Header : React.FC = () => {
     }, [profileRef]);
 
 return (
-    <>
+    <div>
         <div className='flex items-center justify-between px-16 py-10  '>
             <div className=' flex flex-row items-center gap-5'>
                 <form className='flex bg-white items-center rounded-lg w-[500px]  border-2 h-14 hover:border-primaryborder'>
@@ -92,7 +92,7 @@ return (
         </div>
         {tambahModel && <TambahModel onClose={closeTambah} />}
         {validateOutModel &&< ValidateModel onClose={closeValidate}/>}
-    </>
+    </div>
     )
 }
 

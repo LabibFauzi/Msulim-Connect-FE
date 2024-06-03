@@ -4,7 +4,6 @@ import Link from 'next/link'
 import ArtikelCard from '../components/card/artikelcard'
 const Artikel = () => {
   return (
-    <>
       <div className='flex flex-col h-full w-full gap-10 ml-16'>
         <section className='w-full bg-white h-[500px] flex flex-col items-center rounded-2xl gap-2 justify-center shadow-lg'>
           <div className='flex items-start w-[90%] justify-start'>
@@ -37,7 +36,6 @@ const Artikel = () => {
                 </div>
             </section>
         </div>
-    </>
   )
 }
 

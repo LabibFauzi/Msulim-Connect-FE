@@ -35,7 +35,6 @@ const PostinganIslami = () => {
   };
 
   return (
-    <>
       <div className='flex flex-col items-center gap-10'>
         <section className='flex flex-col w-2/5 h-1/2 bg-white rounded-2xl px-4 py-6 gap-3 select-none shadow-lg'>
           <div className='flex flex-row h-16 justify-between items-center'>
@@ -146,7 +145,6 @@ const PostinganIslami = () => {
           <h1 className='font-normal text-base'> <span className='font-extrabold'>Admin</span> Seberat beratnya ujian, Allah tidak akan memberikan ujian yang kamu tidak bisa hadapi</h1>
         </section> 
       </div>
-    </>
   )
 }
 

@@ -45,7 +45,6 @@ const Gantisandi = () => {
     }
   };
   return (
-    <>
       <div className="flex md:flex-row justify-center items-center ">
         {/* kiri */}
         <div className="md:w-1/2 p-4 h-screen flex items-center justify-center cursor-default">
@@ -85,7 +84,6 @@ const Gantisandi = () => {
         {/* kanan */}
         <div className="md:w-1/2 hidden md:block p-4 bg-secondarypresed h-screen"></div>
       </div>
-    </>
   )
 }
 

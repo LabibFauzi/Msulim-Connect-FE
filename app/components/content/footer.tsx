@@ -2,7 +2,6 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <>
       <div className=' flex-col flex '>
         <div className='bg-primarypresed text-white p-5 flex flex-col'>
           <div className='flex flex-row items-start'>
@@ -21,8 +20,6 @@ const Footer = () => {
           <p className='text-xs font-bold '>Mconnect@gmail.com</p>
         </div>
       </div>
-      
-    </>
   )
 }
 

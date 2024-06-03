@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 const page = () => {
     return (
-        <>
             <div className='flex flex-col h-full w-full ml-16 gap-10'>
                 <section className=' flex flex-col items-center gap-10 bg-white shadow-lg rounded-lg py-10'>
                     <div className='flex flex-col gap-2 justify-start w-11/12 '>
@@ -47,7 +46,6 @@ const page = () => {
                     </div>
                 </section>
             </div>
-        </>
     )
 }
 

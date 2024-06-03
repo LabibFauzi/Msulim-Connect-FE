@@ -1,13 +1,10 @@
 import React from 'react'
-import TopikCard from '../card/topikcard';
-import PostingCard from '../card/postingcard';
 import ArtikelCard from '../card/artikelcard';
 import Link from 'next/link';
 import '../styles/global.css'
 
 export const Beranda = () => {
 return (
-    <>
         <div className='w-full flex items-center flex-col ml-16 gap-10'>
             <section className=' rounded-2xl overflow-hidden relative section-beranda cursor-default shadow-lg'>
                 <img src="/asets/beranda.jpg" className='object-cover w-full rounded-2xl brightness-50 hover:scale-105 duration-300' />
@@ -58,7 +55,6 @@ return (
                 </div>
             </section>
         </div>
-    </> 
 )
 }
 export default Beranda;

@@ -12,7 +12,7 @@ const Profile = () => {
     };
 
     return (
-    <>
+    <div>
         <div className='flex flex-row h-16 justify-between items-center'>
             <div className='flex gap-4 justify-center items-center'>
                 <img src="/asets/profile-picture.png" alt="" className='flex w-10 h-10 rounded-full' />
@@ -26,7 +26,7 @@ const Profile = () => {
             </button>
         </div>
         {reportCard && <ReportModel onClose={closeReport}/>}
-    </>
+    </div>
     );
 };
 export default Profile;

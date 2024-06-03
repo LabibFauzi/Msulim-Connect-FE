@@ -48,7 +48,6 @@ const Masuk = () => {
     };
 
     return (
-        <>
         <div className="flex flex-col md:flex-row items-center justify-center">
             {/* kiri */}
             <div className="md:w-1/2 p-4 h-screen flex items-center justify-center">
@@ -87,7 +86,6 @@ const Masuk = () => {
             {/* kanan */}
             <div className="md:w-1/2 p-4 bg-secondarypresed h-screen hidden md:block"></div>
         </div>
-        </>
     );
     };
 

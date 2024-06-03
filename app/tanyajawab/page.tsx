@@ -3,7 +3,6 @@ import React from 'react'
 import Link from 'next/link'
 const tanyajawab = () => {
     return (
-    <>
         <div className='flex w-full flex-col ml-16'>
             <div className='flex flex-row  gap-10 mb-10'>
                 <div className='flex flex-col bg-white w-1/2 h-56 rounded-2xl p-4 gap-2 shadow-md cursor-default hover:shadow-lg duration-150'>
@@ -70,7 +69,6 @@ const tanyajawab = () => {
                 </div>
             </div>
         </div>
-    </>
 )
 }
 

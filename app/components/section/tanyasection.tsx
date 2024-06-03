@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React from 'react'
 const  Tanyasection = () => {
 return (
-    <>
         <div className='flex flex-col bg-white w-1/2 h-56 rounded-2xl p-4 gap-2 shadow-md cursor-default hover:shadow-lg duration-150'>
             <div className='flex flex-row h-16 justify-between items-center'>
                 <div className='flex gap-4'>
@@ -19,7 +18,6 @@ return (
             </div>
         
         </div>
-    </>
 
 )
 }

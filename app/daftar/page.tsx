@@ -52,7 +52,6 @@ const Daftar = () => {
   };
 
   return (
-    <>
     <div className="flex flex-col md:flex-row items-center justify-center">
       {/* kiri */}
       <div className="md:w-1/2 h-screen p-4 flex items-center justify-center cursor-default">
@@ -100,7 +99,6 @@ const Daftar = () => {
       {/* kanan */}
       <div className="md:w-1/2 p-4 bg-secondarypresed h-screen hidden md:block"></div>
     </div>
-  </>
   );
 };
 

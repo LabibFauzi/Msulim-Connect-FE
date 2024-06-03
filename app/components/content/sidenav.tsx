@@ -69,7 +69,6 @@ const SideNav = () => {
   ]
 
   return (
-    <>  
       <div className='bg-white h-screen w-80 px-7 pt-14 items-center flex-col fixed block'>
         <div className='justify-center items-center flex mb-14 cursor-default'>
           <img src="/asets/logo.png" className='w-10 h-10 mr-3 flex'/>
@@ -91,7 +90,6 @@ const SideNav = () => {
           ))}
         </div>
       </div>
-    </>
   )
 }
 
