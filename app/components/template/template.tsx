@@ -13,7 +13,7 @@ const Template = ({children}: { children: React.ReactNode }) => {
                 <div className='flex-1 w-11/12 '>
                     {children}
                 </div>
-                <div className="mb-40"></div>
+                <div className="mb-96"></div>
             </main>
             <footer className="col-span-7 z-20">
                 <Footer/>
