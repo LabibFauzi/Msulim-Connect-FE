@@ -6,8 +6,8 @@ interface ShareModelProps {
 const share: React.FC<ShareModelProps> = ({ onClose }) =>{
 return (
     <div className='fixed flex top-0 left-0 w-full h-full bg-black bg-opacity-30 z-50 justify-center items-center'>
-        <div className='flex flex-col bg-white w-1/3 h-auto rounded-2xl items-center p-3 gap-3'>
-            <div className='flex flex-row items-center justify-between w-full gap-24 p-2'>
+        <div className='flex flex-col bg-white w-[300px] h-auto rounded-2xl items-center p-3 gap-3'>
+            <div className='flex flex-row items-center justify-end w-full gap-32 p-2'>
                 <h1 className='font-bold text-2xl'>Bagikan</h1>
                 <button onClick={onClose}>
                     <img src="/asets/exit.png" alt="" className='flex w-8 h-8 hover:scale-110'/>

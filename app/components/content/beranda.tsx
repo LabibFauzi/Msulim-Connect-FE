@@ -5,46 +5,26 @@ import '../styles/global.css'
 
 export const Beranda = () => {
 return (
-        <div className='w-full flex items-center flex-col ml-16 gap-10'>
-            <section className=' rounded-2xl overflow-hidden relative section-beranda cursor-default shadow-lg'>
-                <img src="/asets/beranda.jpg" className='object-cover w-full rounded-2xl brightness-50 hover:scale-105 duration-300' />
-                    <div className='z-30 flex flex-col absolute w-1/2 pl-20 justify-center h-full gap-20'> 
+        <div className='w-full flex items-center flex-col ml-10 md:pr-10 gap-10'>
+            <section className=' flex rounded-2xl overflow-hidden relative w-full md:h-[400px] xl:h-[500px] h-[300px] cursor-default shadow-lg'>
+                <img src="/asets/beranda.jpg" className='object-cover w-full rounded-2xl brightness-50 md:hover:scale-105 duration-300' />
+                    <div className='z-30 flex flex-col absolute md:w-1/2 w-4/5 md:pl-20 px-5 justify-center h-full gap-20'> 
                         <div className='flex flex-col gap-2'>
-                            <h1 className='text-5xl font-bold text-white'>Komunitas Online Untuk Umat Islam.</h1>
+                            <h1 className='md:text-5xl xl:text-6xl text-3xl font-bold text-white'>Komunitas Online Untuk Umat Islam.</h1>
                         </div>
                     <div className='flex flex-col gap-4'>
-                        <p className='text-2xl text-white font-bold'>Terpopuler</p>
+                        <p className='text-xl md:text-2xl xl:text-3xl text-white font-bold'>Terpopuler</p>
                         <div className='flex flex-row gap-5 '>
-                            <Link className='flex w-36 h-14 bg-secondarymain justify-center items-center text-lg text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/tanyajawab'>Topik</Link>
-                            <Link className='flex w-36 h-14 bg-secondarymain justify-center items-center text-lg text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/postingan'>Postingan</Link>
-                            <Link className='flex w-36 h-14 bg-secondarymain justify-center items-center text-lg text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/artikel'>Artikel</Link>
+                            <Link className='flex w-36 md:w-40 h-14 md:h-16 bg-secondarymain justify-center items-center xl:text-xl md:text-lg text-xs text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/tanyajawab'>Topik</Link>
+                            <Link className='flex w-36 md:w-40 h-14 md:h-16 bg-secondarymain justify-center items-center xl:text-xl md:text-lg text-xs text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/postingan'>Postingan</Link>
+                            <Link className='flex w-36 md:w-40 h-14 md:h-16 bg-secondarymain justify-center items-center xl:text-xl md:text-lg text-xs text-white rounded-xl hover:bg-secondaryhover font-bold duration-300' href='/artikel'>Artikel</Link>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className='w-full  flex flex-col justify-center items-start bg-white rounded-2xl gap-16 px-10 py-10  cursor-default shadow-lg'>
-                <h1 className='text-2xl font-bold text-secondarymain items-start'>Artikel Terkini</h1>
-                <div className='flex flex-col gap-20 w-full  '>
-                    <div className='flex flex-row gap-10 w-full justify-center '>
-                        <Link className='flex flex-col w-1/5 h-40  gap-1 ' href='/artikel1'>
-                            <img  className='object-cover rounded-lg h-full ' src="/asets/artikel1.jpg" alt="" />
-                            <h2 className='text-black font-semibold text-md'>Bidang Farmasi Menurut Integrasi Islam</h2>
-                        </Link>
-                        <Link className='flex flex-col w-1/5 h-40  gap-1 ' href='/artikel2'>
-                            <img  className='object-cover rounded-lg h-full ' src="/asets/artikel2.jpg" alt="" />
-                            <h2 className='text-black font-semibold text-md'>Perempuan dalam Konflik dan Rekonsiliasi: Perspektif Islam</h2>
-                        </Link>
-                        <Link className='flex flex-col w-1/5 h-40 gap-1 ' href='/artikel3'>
-                            <img  className='object-cover rounded-lg h-full ' src="/asets/artikel3.jpg" alt="" />
-                            <h2 className='text-black font-semibold text-md'>Perspektif Peradaban Islam Terhadap Pengaruh Budaya Barat di Indonesia</h2>
-                        </Link>
-                        <ArtikelCard/>
-                        <ArtikelCard/>
-                        <ArtikelCard/>
-                    </div>
-                </div>
-                <div className='flex flex-col gap-20 w-full  '>
-                    <div className='flex flex-row gap-10 w-full justify-center '>
+            <section className='w-full  flex flex-col justify-center bg-white rounded-2xl gap-5 px-5 py-10 pb-20 cursor-default shadow-lg'>
+                <h1 className='text-xl md:text-2xl xl:text-3xl font-bold text-secondarymain items-start'>Artikel Terkini</h1>
+                    <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10 md:gap-20 xl:gap-5 w-full justify-center '>
                         <ArtikelCard/>
                         <ArtikelCard/>
                         <ArtikelCard/>
@@ -52,7 +32,6 @@ return (
                         <ArtikelCard/>
                         <ArtikelCard/>
                     </div>
-                </div>
             </section>
         </div>
 )

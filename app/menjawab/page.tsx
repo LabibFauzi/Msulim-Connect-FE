@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import BalasanSection from '../components/section/balasansection';
 import BalasanUser from '../components/section/balasanuser';
 import ReportModel from '../components/model/reportModel';
+import Profile from '../components/card/profile';
+import BalasanCard from '../components/card/balasancard';
 
 const Menjawab = () => {
     const [reportCard, setReportCard] = useState(false);
@@ -15,49 +17,22 @@ const Menjawab = () => {
         setReportCard(false)
     };
 return (
-        <div className='flex flex-col ml-16 w-full gap-10 cursor-default'>
+        <div className='flex flex-col ml-10 md:mx-10 w-full gap-10 cursor-default'>
             <div className='flex flex-col bg-white rounded-2xl px-6 py-6 gap-5 shadow-lg'>
-            <div className='flex flex-row h-16 justify-between items-center'>
-                    <div className='flex gap-4 justify-center items-center'>
-                        <img src="/asets/profile-picture.png" alt="" className='flex w-10 h-10 rounded-full ' />
-                        <div className='flex flex-col '>
-                            <h1 className='font-bold text-base'>Labib Fauzi</h1>
-                            <h1 className='font-medium text-base text-neutural'>1 jam yang lalu</h1>
-                        </div>
-                    </div>
-                    <button onClick={toggleReport}>
-                        <img src="/asets/report.png" alt="" className='flex w-6 h-6 hover:scale-110' />
-                    </button>
-                </div>
-                {reportCard && <ReportModel onClose={closeReport}/>}
+                <Profile/>
                 <div className='flex flex-col pl-14 gap-5 pb-10 '>
-                    <h1 className='text-2xl font-bold'>Mau tanya kak, syarat sah shalat itu apa aja? </h1>
+                    <h1 className='text-xl md:text-2xl font-bold '>Mau tanya kak, syarat sah shalat itu apa aja? </h1>
                     <form className='flex flex-row w-full gap-5 justify-center'>
-                        <textarea spellCheck="false" className='w-full  resize-none outline-none text-xl bg-neutural2 px-5 rounded border pt-4 pb-2 h-16' placeholder='Jawab Pertanyaan' />
-                        <button className=' border border-primaryborder rounded-md text-secondarymain w-24 justify-center items-center font-bold hover:scale-105 duration-150'>Kirim</button>
+                        <textarea spellCheck="false" className='w-full  resize-none outline-none text-xl bg-neutural2 border-2  hover:border-primaryborder px-5 rounded pt-4 pb-2 h-16' placeholder='Jawab Pertanyaan' />
+                        <button className='rounded-md text-white w-24 justify-center items-center font-bold bg-secondarymain hover:bg-secondaryhover duration-300'>Kirim</button>
                     </form>
                 </div>
             </div>
             <div className='flex flex-col bg-white w-full p-6  gap-10 rounded-2xl'>
                 <h1 className='text-2xl font-bold text-secondarymain'>Balasan Pertanyaan</h1>
-                <div className='flex flex-col pl-14 pr-2 mb-6'>
-                    <div className='flex flex-row h-16 justify-between items-center'>
-                        <div className='flex gap-4 justify-center items-center'>
-                            <img src="/asets/profile-picture.png" alt="" className='flex w-10 h-10 rounded-full' />
-                            <div className='flex flex-col '>
-                                <h1 className='font-bold text-base'>Aulia Rahman</h1>
-                                <h1 className='font-medium text-base text-neutural'>20 menit yang lalu</h1>
-                            </div>
-                        </div>
-                        <button onClick={toggleReport}>
-                            <img src="/asets/report.png" alt="" className='flex w-6 h-6 hover:scale-110' />
-                        </button>
-                    </div>
-                    {reportCard && <ReportModel onClose={closeReport}/>}
-                    <div className='flex pl-14'>
-                        <h1 className='text-xl font-bold'> Syarat sah shalat setauku sudah masuk waktu shalat, suci dari hadas kecil maupun besar, menutup aurat, menghadap kiblat, berniat. Buat memahami lebih lanjut coba tanya ustadz atau ulama terpercaya atau coba cari di laman artikel, siapa tau sudah dijelaskan</h1>
-                    </div>
-                </div>
+                <BalasanCard/>
+                <BalasanCard/>
+                <BalasanCard/>
             </div>
         </div>
 )

@@ -69,10 +69,10 @@ const SideNav = () => {
   ]
 
   return (
-      <div className='bg-white h-screen w-80 px-7 pt-14 items-center flex-col fixed block'>
-        <div className='justify-center items-center flex mb-14 cursor-default'>
-          <img src="/asets/logo.png" className='w-10 h-10 mr-3 flex'/>
-          <Link className='text-secondarymain text-2xl font-bold items-center' href='/'>Muslim Connect</Link>
+      <div className='bg-white h-full w-64 md:w-80 px-4 md:px-4 pt-14 items-center flex-col fixed block'>
+        <div className='justify-center items-center flex mb-12 cursor-default'>
+          <img src="/asets/logo.png" className='w-8 h-8 mr-3 flex'/>
+          <Link className='text-secondarymain text-xl md:text-2xl font-bold items-center' href='/'>Muslim Connect</Link>
         </div>
         <div className='flex-col flex gap-4 text-lg font-bold justify-center w-full'>
           {DATA.map((val, id) => (

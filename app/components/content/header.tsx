@@ -46,33 +46,33 @@ const Header : React.FC = () => {
 
 return (
     <div>
-        <div className='flex items-center justify-between px-16 py-10  '>
-            <div className=' flex flex-row items-center gap-5'>
-                <form className='flex bg-white items-center rounded-lg w-[500px]  border-2 h-14 hover:border-primaryborder'>
+        <div className='flex items-center justify-between mx-10 my-10 mr-8  '>
+            <div className=' flex flex-row items-center gap-2 w-full md:w-auto'>
+                <form className='flex bg-white items-center rounded-lg w-[80%] md:w-[400px] xl:w-[500px] border-2 h-14 hover:border-primaryborder'>
                     <button className='flex w-16 justify-center h-full items-center'>
-                        <img src="/asets/search.png" className='h-6 w-6 m-2 cursor-pointer hover:opacity-50' />
+                        <img src="/asets/search.png" className='h-5 w-5 m-2 cursor-pointer hover:opacity-50' />
                     </button>   
                     <input 
-                    className='flex outline-none text-neutural3 text-xl w-3/4 h-full '
+                    className='flex outline-none text-neutural3 text-lg md:text-xl'
                     spellCheck="false"
                     type='text'
-                    placeholder='Cari Topik, Postingan, Artikel'
+                    placeholder='Cari konten terkait...'
                     />
                 </form>
                 <button 
-                className='rounded-lg w-24 h-14 justify-center flex items-center bg-secondarymain hover:bg-secondaryhover duration-300' 
+                className='rounded-lg w-10 h-12 justify-center flex items-center bg-secondarymain hover:bg-secondaryhover duration-300' 
                 onClick={toggleTambah}>
-                    <h1 className='text-xl font-bold text-white'>Buat</h1>
+                    <img src="/asets/plus.png" alt="" className='w-4 md:w-5 h-4 md:h-5' />
                 </button>
             </div>
             <div className='flex justify-center items-center gap-4 text-base font-bold cursor-default'>
                     <button onClick={toggleProfile}>
-                        <img src="/asets/profile-picture.png" className='flex w-10 h-10 rounded-full' alt=""/>
+                        <img src="/asets/profile-picture.png" className='flex w-12 h-12 rounded-full' alt=""/>
                     </button>
-                    <h1 className='font-bold text-lg cursor-pointer'>Labib Fauzi</h1>
+                    <h1 className=' hidden md:flex font-bold text-lg md:text-xl cursor-pointer'>Labib Fauzi</h1>
                 {profileModel && (
-                    <div ref={profileRef}className='flex  absolute mt-96 mr-96'>
-                        <div className='flex flex-col justify-center items-center gap-3 z-30  bg-white rounded-lg w-72 h-72 drop-shadow-xl border'>
+                    <div ref={profileRef}className='flex absolute mt-96 mr-72 md:mr-96 '>
+                        <div className='flex flex-col justify-center items-center gap-3 z-50 bg-white rounded-lg w-72 h-72 drop-shadow-xl border'>
                             <img src="/asets/profile-picture.png" className='flex w-20 h-20 object-cover rounded-full' alt="" />
                             <div className='flex items-center flex-col '>
                                 <h1 className='font-bold text-2xl'>Labib Fauzi</h1>
@@ -80,7 +80,7 @@ return (
                             </div>
                             <div className='flex border-y w-full justify-center py-3'>
                                 <button  
-                                    className='text-secondarymain border rounded-lg border-primaryborder w-28 h-12 justify-center flex items-center hover:scale-105 duration-150' 
+                                    className='text-white bg-secondarymain hover:bg-secondaryhover duration-300 rounded-lg w-28 h-12 justify-center flex items-center' 
                                     onClick={toggleValidateOut}
                                     >Keluar
                                 </button>

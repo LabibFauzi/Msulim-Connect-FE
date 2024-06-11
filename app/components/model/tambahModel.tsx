@@ -7,7 +7,7 @@ interface TambahModelProps {
 const TambahModel: React.FC<TambahModelProps> = ({ onClose }) => {
 return (
     <div className='fixed flex top-0 left-0 w-full h-full bg-black bg-opacity-30 z-50 justify-center items-center'>
-        <div className='flex flex-col bg-white w-1/5 h-auto rounded-2xl items-center p-3 gap-3'>
+        <div className='flex flex-col bg-white w-[250px] h-auto rounded-2xl items-center p-3 gap-3'>
             <div className='flex flex-row items-center justify-end w-full gap-12 p-2'>
                 <h1 className='font-bold text-2xl'>Buat Pertanyaan</h1>
                 <button onClick={onClose}>

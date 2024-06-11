@@ -3,9 +3,10 @@ import React from 'react'
 
 const ArtikelSection = () => {
     return (
-            <div className='flex flex-col w-1/5 h-40 cursor-pointer gap-1 '>
-                <div className='object-cover rounded-lg h-full bg-gray-200'></div>
-            </div>
+            <Link className='flex flex-col w-full h-36 md:h-52 xl:h-60 cursor-pointer gap-1' href='/artikelopen'>
+                <img src='/asets/artikel1.jpg' className='object-cover rounded-lg md:rounded-xl h-full bg-gray-200'></img>
+                <h1 className='text-sm md:text-xl  font-bold'>Bidang Farmasi Menurut Integrasi Islam</h1>
+            </Link>
     )
 }
 

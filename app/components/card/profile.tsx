@@ -15,7 +15,7 @@ const Profile = () => {
     <div>
         <div className='flex flex-row h-16 justify-between items-center'>
             <div className='flex gap-4 justify-center items-center'>
-                <img src="/asets/profile-picture.png" alt="" className='flex w-10 h-10 rounded-full' />
+                <img src="/asets/profile-picture.png" alt="" className='rounded-full flex md:w-10 md:h-10 w-8 h-8' />
                 <div className='flex flex-col '>
                     <h1 className='font-bold text-base'>Labib Fauzi</h1>
                     <h1 className='font-medium text-base text-neutural'>1 jam yang lalu</h1>

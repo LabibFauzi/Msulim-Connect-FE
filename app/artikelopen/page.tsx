@@ -5,19 +5,19 @@ import Link from 'next/link'
 
 const page = () => {
     return (
-            <div className='flex flex-col h-full w-full ml-16 gap-10'>
-                <section className=' flex flex-col items-center gap-10 bg-white shadow-lg rounded-lg py-10'>
-                    <div className='flex flex-col gap-2 justify-start w-11/12 '>
-                        <h1 className='text-4xl text-secondarymain font-bold'>Bidang Farmasi Menurut Integrasi Islam</h1>
+            <div className='flex flex-col h-full w-full ml-10 md:pr-10  gap-10'>
+                <section className=' flex flex-col items-center gap-10 bg-white shadow-lg rounded-lg py-10 px-5'>
+                    <div className='flex flex-col gap-2 justify-start w-full'>
+                        <h1 className='text-2xl md:text-4xl text-secondarymain font-bold'>Bidang Farmasi Menurut Integrasi Islam</h1>
                         <div className='flex flex-row gap-4'>
-                            <p className='text-base text-neutural'>5 menit yang lalu</p>
-                            <p className='text-base text-neutural'>Ditinjau oleh Adim</p>
-                            <p className='text-base text-neutural'>17 januari 2024</p>
+                            <p className='text-xs'>5 menit yang lalu</p>
+                            <p className='text-xs'>Ditinjau oleh Adim</p>
+                            <p className='text-xs'>17 januari 2024</p>
                         </div>
                     </div>
-                    <img src="/asets/artikel1.jpg" className='flex w-11/12 rounded-lg artikelopen-img object-cover' alt="" />
-                    <div className='flex flex-col gap-4 justify-center w-11/12 pb-10 '>
-                        <h1 className='text-2xl text-neutural3  tracking-wide leading-8 text-pretty '>Islam, agama yang sempurna dan penuh kasih sayang, memandang semua ilmu sebagai anugerah Allah, termasuk ilmu kefarmasian. Mempelajari ilmu kefarmasian bukan hanya bermanfaat bagi individu, tetapi juga menjadi sarana ibadah dan membantu sesama. Integrasi ilmu agama dan ilmu kefarmasian ini merupakan wujud kesempurnaan Islam dalam membawa manfaat bagi seluruh alam.
+                    <img src="/asets/artikel1.jpg" className='flex w-full h-full md:h-full rounded-lg object-cover' alt="" />
+                    <div className='flex flex-col gap-4 justify-center pb-10 '>
+                        <h1 className='text-xl md:text-2xl text-neutural3 tracking-wide leading-8 text-pretty '>Islam, agama yang sempurna dan penuh kasih sayang, memandang semua ilmu sebagai anugerah Allah, termasuk ilmu kefarmasian. Mempelajari ilmu kefarmasian bukan hanya bermanfaat bagi individu, tetapi juga menjadi sarana ibadah dan membantu sesama. Integrasi ilmu agama dan ilmu kefarmasian ini merupakan wujud kesempurnaan Islam dalam membawa manfaat bagi seluruh alam.
                             <br /><br />Al-Qur'an dan Hadits, sumber utama ajaran Islam, menjadi panduan bagi ilmu kefarmasian, membuka jalan bagi pemahaman dan pengembangan ilmu kefarmasian yang selaras dengan nilai-nilai Islam, mewujudkan kehidupan sejahtera dan berkah.
                             <br /><br />Agama Islam mengajarkan pentingnya menjaga keseimbangan antara urusan dunia dan akhirat. Kita diminta untuk mempelajari dan menggunakan pengetahuan untuk kebaikan di dunia dan akhirat, sesuai dengan firman Allah dalam QS. Al-Mujadilah ayat 11 yang menyatakan bahwa Allah akan meninggikan orang-orang yang beriman dan yang memiliki ilmu beberapa derajat, karena Dia Maha Mengetahui segala yang kita kerjakan.
                             <br /><br />Farmasi adalah profesi yang mengurus penyediaan obat dari bahan alam atau sintetis untuk pengobatan dan pencegahan penyakit. Para profesional farmasi, dengan pengetahuan luas mereka dalam ilmu alam, fisika, dan kedokteran, bertanggung jawab atas obat-obatan dan menyadari risiko kesalahan yang dapat membahayakan pasien.
@@ -28,25 +28,17 @@ const page = () => {
                         </h1>
                     </div>
                 </section>
-                <section className='w-full  flex flex-col justify-center items-start bg-white rounded-2xl gap-4 pl-12 px-10 pt-10 pb-20 cursor-default shadow-lg'>
-                    <h1 className='text-2xl font-bold text-secondarymain items-start'>Artikel Terkait</h1>
-                    <div className='flex flex-col gap-20 w-full'>
-                        <div className='flex flex-row gap-10 w-full justify-center '>
-                            <Link className='flex flex-col w-1/5 h-40 gap-1 ' href='/artikel2'>
-                                <img  className='object-cover rounded-lg h-full ' src="/asets/artikel2.jpg" alt="" />
-                                <h2 className='text-black font-semibold text-md'>Perempuan dalam Konflik dan Rekonsiliasi: Perspektif Islam</h2>
-                            </Link>
-                            <Link className='flex flex-col w-1/5 h-40 gap-1 ' href='/artikel3'>
-                                <img  className='object-cover rounded-lg h-full ' src="/asets/artikel3.jpg" alt="" />
-                                <h2 className='text-black font-semibold text-md'>Perspektif Peradaban Islam Terhadap Pengaruh Budaya Barat di Indonesia</h2>
-                            </Link>
-                            <ArtikelCard/>
-                            <ArtikelCard/>
-                            <ArtikelCard/>
-                            <ArtikelCard/>
-                        </div>
+                <section className='w-full  flex flex-col justify-center bg-white rounded-2xl gap-5 px-5 py-10 pb-20 cursor-default shadow-lg'>
+                <h1 className='text-xl md:text-2xl xl:text-3xl font-bold text-secondarymain items-start'>Artikel Terkini</h1>
+                    <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10 md:gap-20 xl:gap-5 w-full justify-center '>
+                        <ArtikelCard/>
+                        <ArtikelCard/>
+                        <ArtikelCard/>
+                        <ArtikelCard/>
+                        <ArtikelCard/>
+                        <ArtikelCard/>
                     </div>
-                </section>
+            </section>
             </div>
     )
 }
